@@ -1,0 +1,28 @@
+{
+  "name": "2016-06-mvp",
+  "version": "1.0.0",
+  "description": "Lost and Found",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "bluebird": "^3.4.1",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "live-server": "^1.0.0",
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccarey221/2016-06-mvp.git"
+  },
+  "author": "Conor Carey",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ccarey221/2016-06-mvp/issues"
+  },
+  "homepage": "https://github.com/ccarey221/2016-06-mvp#readme"
+}

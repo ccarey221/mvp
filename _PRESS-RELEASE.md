@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Find Your Belongings
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > If you've lost or found anything, post it on our site so that people can get their belongings back.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Our site will provide customers an easy way to find the belongings they've lost. The customers will be able to offer rewards for their belongings. Once their belonging has been found, the finder may contact the customer to exchange their belonging for the reward.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > How can we connect people who have lost belongings with people that have found their belongings?
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Through photos of the missing items, people can identify their belongings. Only the customers who have lost the item may post pictures requesting other's contact them with their belonging, thus removing the possibility of other users claiming items that do not belong to them.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > Items can be worth far more than their monetary value. Connecting items with their owners can be far more meaningful than simply saving money.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Simply type in what you've lost 'i.e. 'watch'' and post a picture that proves that you are the owner of the lost item.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > I lost my dog a few days ago and posted a picture of me with Fido on 'Find Your Belongings'. Within 24 hours I was reunited with Fido and gave the gentleman who found him a handsome reward!
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Now that you know what Find Your Belongings is all about, go and find your lost belongings!
