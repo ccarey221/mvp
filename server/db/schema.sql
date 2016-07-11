@@ -9,11 +9,12 @@ CREATE TABLE user (
   PRIMARY KEY (id)
 );
 
+-- add a picture field to lostItem table in future, difficult for now
 CREATE TABLE lostItem (
   id INTEGER,
   FOREIGN KEY (user_id) REFERENCES user(id),
   keyword VARCHAR(25),
   description VARCHAR(250),
-  image blob not null,
+  reward INTEGER,
   PRIMARY KEY (id)
 );

@@ -7,8 +7,8 @@ var connection = mysql.createConnection({
   database: 'lost'
 })
 
-connection.connect(function(err) {
-  if (err) {
+connection.connect(function(error) {
+  if (error) {
     console.log('Error connecting to DB', error)
     return;
   } 
@@ -24,5 +24,24 @@ exports.queries = {
         return data;
       }
     )
-  }
+  },
+
+  newItem: function(itemObj) {
+    connection.query(
+      'INSERT INTO lostItem (keyword, description, reward) VALUES (' + itemObj.keyword + ',' + itemObj.description + ',' + itemObj.reward + ')',
+      function(error) {
+        if (error) { throw error; }
+      }
+    )
+  },
+
+  getUserItems: function(user) {
+    connection.query(
+      'SELECT * FROM lostItem INNER JOIN user ON ' + user + '.username = user.username AND user.id = lostItem.user_id',
+      function(error, data) {
+        if (error) { throw error; }
+        return data;
+      }
+    )
+  } 
 }
