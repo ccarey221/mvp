@@ -1,4 +1,7 @@
+DROP DATABASE lost;
 CREATE DATABASE lost;
+
+USE lost;
 
 CREATE TABLE user (
   id INTEGER AUTO_INCREMENT,
@@ -11,10 +14,12 @@ CREATE TABLE user (
 
 -- add a picture field to lostItem table in future, difficult for now
 CREATE TABLE lostItem (
-  id INTEGER,
-  FOREIGN KEY (user_id) REFERENCES user(id),
+  id INTEGER AUTO_INCREMENT,
+  user_id INTEGER,
   keyword VARCHAR(25),
   description VARCHAR(250),
   reward INTEGER,
-  PRIMARY KEY (id)
+  createdAt DATE,
+  PRIMARY KEY(id)
+  FOREIGN KEY(user_id) REFERENCES user(id),
 );

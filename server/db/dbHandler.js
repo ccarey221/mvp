@@ -16,6 +16,16 @@ connection.connect(function(error) {
 })
 
 exports.queries = {
+  populateTable: function() {
+    connection.query(
+      'SELECT * FROM lostItem',
+      function (error, data) {
+        if (error) {throw error};
+        return data;
+      }
+    )
+  },
+
   getData: function(searchTerm) {
     connection.query(
       'SELECT * FROM lostItem WHERE keyword LIKE ' + searchTerm,
@@ -41,6 +51,25 @@ exports.queries = {
       function(error, data) {
         if (error) { throw error; }
         return data;
+      }
+    )
+  },
+
+  checkPassword: function(username) {
+    connection.query(
+      'SELECT password FROM user WHERE username = ' + username,
+      function (error, data) {
+        if (error) {throw error};
+        return data;
+      }
+    )
+  },
+
+  createUser: function(userObj) {
+    connection.query(
+      'INSERT INTO user (username, name, password, email) VALUES (' + userObj.username + ',' + userObj.name + ',' + userObj.password + ',' + userObj.email + ')',
+      function (error) {
+        if (error) {throw error};
       }
     )
   } 

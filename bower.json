@@ -1,0 +1,28 @@
+{
+  "name": "2016-06-mvp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ccarey221/2016-06-mvp",
+  "authors": [
+    "Conor Carey"
+  ],
+  "description": "Lost and Found",
+  "main": "app.js",
+  "keywords": [
+    "lostAndFound"
+  ],
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.7",
+    "angular-route": "~1.5.7",
+    "angular-mocks": "~1.5.7",
+    "jquery": "~3.1.0"
+  }
+}

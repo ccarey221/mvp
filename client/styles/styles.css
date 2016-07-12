@@ -1,0 +1,26 @@
+body {
+  background-color: lightgrey; 
+}
+
+.topDiv h1 {
+  float: center;
+  color: black;
+}
+
+.topDiv {
+  background-color: orange;
+}
+
+.addItem input {
+  margin: 0 0 0 10px;
+}
+
+.addItem {
+  float: right;
+}
+
+.items {
+  float: center;
+  top: 500px;
+  overflow: auto;
+}
