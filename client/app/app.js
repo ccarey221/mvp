@@ -8,7 +8,7 @@ angular.module('Found', ['ngRoute'])
       controller: 'addItemController'
     })
       .when('/found', {
-      templateUrl: 'index.html',
+      templateUrl: '../index.html',
       controller: 'itemController'
       })
       .otherwise({

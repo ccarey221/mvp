@@ -1,0 +1,59 @@
+{
+  "name": "angular-route",
+  "version": "1.3.20",
+  "description": "AngularJS router module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular.js.git"
+  },
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "router",
+    "client-side"
+  ],
+  "author": {
+    "name": "Angular Core Team",
+    "email": "angular-core+npm@google.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "homepage": "http://angularjs.org",
+  "gitHead": "785879cc163aee00ca7ef262ece356b8d81fd794",
+  "_id": "angular-route@1.3.20",
+  "_shasum": "13a75cffed7a4a787ead775023608f3bde06e194",
+  "_from": "angular-route@>=1.3.16 <1.4.0",
+  "_npmVersion": "2.0.2",
+  "_nodeVersion": "0.10.26",
+  "_npmUser": {
+    "name": "angularcore",
+    "email": "angular-core+npm@google.com"
+  },
+  "maintainers": [
+    {
+      "name": "mljsimone",
+      "email": "mljsimone@gmail.com"
+    },
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    },
+    {
+      "name": "petebd",
+      "email": "pete@bacondarwin.com"
+    }
+  ],
+  "dist": {
+    "shasum": "13a75cffed7a4a787ead775023608f3bde06e194",
+    "tarball": "https://registry.npmjs.org/angular-route/-/angular-route-1.3.20.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-route/-/angular-route-1.3.20.tgz"
+}
