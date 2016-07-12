@@ -2,21 +2,21 @@
 
 var Found = angular.module('Found', [
   'ngRoute',
-  'AddItemController',
-  'ItemController'
+  'Found.AddItem',
+  'Found.Item'
   ])
-  .config(['$routeProvider'], function($routeProvider) {
+  .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/addItem', {
       templateUrl: 'addItems/addItem.html',
-      controller: 'addItemController'
+      controller: 'AddItemController'
     })
       .when('/found', {
-      templateUrl: '../index.html',
-      controller: 'itemController'
+      templateUrl: 'index.html',
+      controller: 'ItemController'
       })
       .otherwise({
         redirectTo: '/found'
       });
-  })
+  }])
 

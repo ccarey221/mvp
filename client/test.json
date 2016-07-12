@@ -1,0 +1,25 @@
+[
+   {
+      "keyword" : "dog",
+      "description" : "black and white spotted terrier",
+      "reward" : 500
+   },
+  
+   {
+      "keyword" : "phone",
+      "description" : "has a picture of the eifel tower as the home screen",
+      "reward" : 50
+   },
+  
+   {
+      "keyword" : "shoe",
+      "description" : "black nike, has Trevor Healy written on the tongue",
+      "reward" : 3
+   },
+  
+   {
+      "keyword" : "dog",
+      "description" : "Golden retriever, has a tag that says 'Lucky'",
+      "reward" : 300
+   }
+]
