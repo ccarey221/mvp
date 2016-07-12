@@ -1,18 +1,39 @@
-body {
-  background-color: lightgrey; 
+html {
+  height: 100%;
 }
 
-.topDiv h1 {
-  float: center;
+body {
+  height: 100%;
+  background: linear-gradient(teal, cyan);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
   color: black;
 }
 
-.topDiv {
-  background-color: orange;
+.container {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  border-radius: 25px;
+  left: 5%;
+  background: linear-gradient(white, lightgrey);
+
 }
 
-.addItem input {
-  margin: 0 0 0 10px;
+.searchItems {
+  width: 30%;
+  height: 20px;
+  margin: 10px;
+  border-radius: 25px;
+  position: relative;
+  left: 34%;
+}
+
+.lostItems {
+  float: center;
 }
 
 .addItem {
@@ -24,3 +45,25 @@ body {
   top: 500px;
   overflow: auto;
 }
+
+.name {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.reward {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.description {
+  margin: 10px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+

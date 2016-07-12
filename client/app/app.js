@@ -1,7 +1,11 @@
 // Main control flow of app
 
-angular.module('Found', ['ngRoute'])
-  .config(function($routeProvider) {
+var Found = angular.module('Found', [
+  'ngRoute',
+  'AddItemController',
+  'ItemController'
+  ])
+  .config(['$routeProvider'], function($routeProvider) {
     $routeProvider
       .when('/addItem', {
       templateUrl: 'addItems/addItem.html',

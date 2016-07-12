@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+  <script type="text/javascript" src="addItemController.js"></script>
   <link rel="stylesheet" type='text/css' href="../../styles/styles.css">
   <title>Add Your Lost Item Here</title>
 </head>
-<body>
+<body ng-controller='AddItemController'>
   <h1>Add Your Lost Item Here</h1>
-  <form class="newItem" type='submit'>
-    Keyword:<br>
-    <input class="name" /><br>
-    Describe your lost belonging:<br>
-    <input class="description" /><br>
-    How much money are you offering for a reward?<br>
-    <input class='reward' />
-  </form>
+  <div class='container'>
+    <form class="newItem" type='submit'>
+      <div class='name'>Keyword:</div>
+      <input class="name" /><br>
+      <div class='description'>Describe your lost belonging:</div>
+      <input class="description" /><br>
+      <div class='reward'>How much money are you offering for a reward?</div>
+      <input class='reward' />
+      <a href="../../index.html">Go back to main page</a>
+    </form>
+  </div>
 </body>
 </html>

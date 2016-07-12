@@ -6,19 +6,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-route.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="itemController.js"></script>
-  <script type="text/javascript" src="app/addItems/addItemController.js"></script>
   <script type="text/javascript" src="app/app.js"></script>
   <title>Found!</title>
 </head>
 <body>
-  <div>
-    <div class="topDiv">
-      <h1>Found!</h1>
-    </div>
-    <button class="addItem">Click here to add your lost belonging</button>
-    <div class="lostItems" ng-controller='itemController'>
-      <input class="searchItems" ng-model='search'>
-      <div>{{ search }}</div>
+    <h1>Found!</h1>
+  <div class='container'>
+    <button class="addItem"><a href="app/addItems/addItem.html">Click here to add your lost belonging</a></button>
+    <div class="lostItems" ng-controller='ItemController'>
+      <input class="searchItems" ng-model='search' placeholder='What word best decribes what you found?' />
+      <div ng-model='search'>{{ search }}</div>
       <div class="lostItem" ng-repeat="item in data.items | filter:search"></div>
     </div>
   </div>
