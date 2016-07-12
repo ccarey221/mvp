@@ -9,7 +9,7 @@
     "http": "0.0.0",
     "live-server": "^1.0.0",
     "mysql": "^2.11.1",
-    "nodemon": "^1.9.2",
+    "nodemon": "^1.9.2"
   },
   "devDependencies": {},
   "scripts": {

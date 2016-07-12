@@ -1,4 +1,3 @@
-var addItemController = angular.module('addItemController', [])
-.controller('addItemController', function($scope) {
-    $scope.search = 'hi';
+var AddItemController = angular.module('AddItemController', [])
+.controller('AddItemController', function($scope) {
 });
