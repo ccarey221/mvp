@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
 })
 
 app.get(__dirname + '/../client/test.json', function(req, res) {
-  console.log('got to the server!')
+  requestHandler.newItem(req.data);
 })
 
 app.post(__dirname + '/../client/test.json', function(req, res) {
