@@ -17,6 +17,14 @@ input {
   border-radius: 25px;
 }
 
+#map {
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  left: 60%;
+  top: 30%;
+}
+
 .container {
   width: 90%;
   height: 90%;
@@ -40,16 +48,19 @@ input {
   border-radius: 10px;
   position: relative;
   margin-top: 20%;
-  left: 20%;
-  width: 20%;
+  left: 10%;
+  width: 30%;
   overflow: auto;
 }
 
-.lostItem {
+#item {
   margin: 10px;
-  border-radius: 10px;
   border: 1px black;
   position: relative;
+}
+
+#item:hover {
+  text-decoration-color: green;
 }
 
 .addItem {
@@ -79,6 +90,15 @@ input {
   font-size: 20px;
 }
 
+.location {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.lostAddButton {
+  margin: 10px;
+  margin-bottom: 20px;
+}
 
 
 

@@ -2,24 +2,28 @@
    {
       "keyword" : "dog",
       "description" : "black and white spotted terrier",
-      "reward" : 500
+      "reward" : 500,
+      "location" : "944 Market St. San Fransisco"
    },
   
    {
       "keyword" : "phone",
       "description" : "has a picture of the eifel tower as the home screen",
-      "reward" : 50
+      "reward" : 50,
+      "location" : "944 Market St. San Fransisco"
    },
   
    {
       "keyword" : "shoe",
       "description" : "black nike, has Trevor Healy written on the tongue",
-      "reward" : 3
+      "reward" : 3,
+      "location" : "944 Market St. San Fransisco"
    },
   
    {
       "keyword" : "dog",
       "description" : "Golden retriever, has a tag that says 'Lucky'",
-      "reward" : 300
+      "reward" : 300,
+      "location" : "944 Market St. San Fransisco"
    }
 ]

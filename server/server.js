@@ -17,10 +17,10 @@ app.get('/', function(req, res) {
 })
 
 app.get(__dirname + '/../client/test.json', function(req, res) {
-  requestHandler.newItem(req.data);
 })
 
 app.post(__dirname + '/../client/test.json', function(req, res) {
+  requestHandler.newItem(req.data);
   
 })
 
