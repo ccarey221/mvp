@@ -1,11 +1,13 @@
 html {
   height: 100%;
+  overflow: auto;
 }
 
 body {
   height: 100%;
   background: linear-gradient(teal, cyan);
   background-repeat: no-repeat;
+  overflow: auto;
 }
 
 h1 {
@@ -22,6 +24,7 @@ button {
   height: 90%;
   border-radius: 25px;
   background: linear-gradient(white, lightgrey);
+  overflow: auto;
 }
 
 #map {
@@ -29,11 +32,12 @@ button {
   height: 72%;
   width: 40%;
   left: 50%;
-  top: 15%;
+  top: 21%;
+  overflow: auto;
 }
 
 #item {
-  margin: 20px;
+  /*margin: 5px;*/
   border: 1px black;
   position: relative;
 }

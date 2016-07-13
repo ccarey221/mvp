@@ -8,6 +8,7 @@ var AddItemController = angular.module('Found.AddItem', [])
       newItem.description = $scope.description;
       newItem.reward = $scope.reward;
       newItem.location = $scope.location;
+      newItem.contact = $scope.contact;
 
       $http.post('/addItem', newItem)
 
@@ -15,6 +16,7 @@ var AddItemController = angular.module('Found.AddItem', [])
       $scope.description = '';
       $scope.reward = '';
       $scope.location = '';
+      $scope.contact = '';
 
     }
 });

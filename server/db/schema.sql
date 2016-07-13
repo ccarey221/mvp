@@ -1,4 +1,4 @@
--- DROP DATABASE lost;
+DROP DATABASE lost;
 CREATE DATABASE lost;
 
 USE lost;
