@@ -13,27 +13,34 @@ h1 {
   color: black;
 }
 
-input {
+button {
+  float: center;
+}
+
+.container {
+  position: relative;
+  height: 90%;
   border-radius: 25px;
+  background: linear-gradient(white, lightgrey);
 }
 
 #map {
   position: absolute;
-  height: 40%;
-  width: 30%;
-  left: 60%;
-  top: 30%;
+  height: 72%;
+  width: 40%;
+  left: 50%;
+  top: 15%;
 }
 
-.container {
-  width: 90%;
-  height: 90%;
+#item {
+  margin: 20px;
+  border: 1px black;
   position: relative;
-  border-radius: 25px;
-  left: 5%;
-  background: linear-gradient(white, lightgrey);
-
 }
+
+/*
+
+
 
 .searchItems {
   width: 30%;
@@ -46,18 +53,14 @@ input {
 .lostItemTable {
   border: 1px black;
   border-radius: 10px;
-  position: relative;
-  margin-top: 20%;
+  position: absolute;
+  margin-top: 10%;
   left: 10%;
+  height: 70%;
   width: 30%;
   overflow: auto;
 }
 
-#item {
-  margin: 10px;
-  border: 1px black;
-  position: relative;
-}
 
 #item:hover {
   text-decoration-color: green;
@@ -100,8 +103,25 @@ input {
   margin-bottom: 20px;
 }
 
+.itemName {
+  font-size: 18px;
+}
+
+.itemDescription {
+  font-size: 18px;
+}
+
+.itemReward {
+  font-size: 18px;
+}
+
+.itemLocation {
+  font-size: 18px;
+}
+
+.info {
+  border: 1px black;
+}
 
 
-
-
-
+*/

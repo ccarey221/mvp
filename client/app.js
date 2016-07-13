@@ -7,14 +7,14 @@ var Found = angular.module('Found', [
   ])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
-      .when('/addItem', {
-      templateUrl: 'addItems/addItem.html',
-      controller: 'AddItemController'
-    })
       .when('/found', {
-      templateUrl: 'index.html',
+      templateUrl: 'partials/main.html',
       controller: 'ItemController'
       })
+      .when('/addItem', {
+      templateUrl: 'partials/addItem.html',
+      controller: 'AddItemController'
+    })
       .otherwise({
         redirectTo: '/found'
       });

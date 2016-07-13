@@ -15,11 +15,9 @@ CREATE TABLE user (
 -- add a picture field to lostItem table in future, difficult for now
 CREATE TABLE lostItem (
   id INTEGER AUTO_INCREMENT,
-  user_id INTEGER,
   keyword VARCHAR(25),
   description VARCHAR(250),
   reward INTEGER,
-  createdAt DATE,
+  location VARCHAR(100),
   PRIMARY KEY(id)
-  FOREIGN KEY(user_id) REFERENCES user(id),
 );

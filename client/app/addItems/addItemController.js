@@ -1,10 +1,20 @@
 var AddItemController = angular.module('Found.AddItem', [])
 .controller('AddItemController', function($scope, $http) {
-  $.on('submit', function() {
-    console.log($('.name').val());
-  })
 
-  $http.post('test.json').success(function() {
-    console.log('POSTED!')
-  })
+    $scope.postData = function() {
+      var newItem = {};
+
+      newItem.name = $scope.name;
+      newItem.description = $scope.description;
+      newItem.reward = $scope.reward;
+      newItem.location = $scope.location;
+
+      $http.post('/addItem', newItem)
+
+      $scope.name = '';
+      $scope.description = '';
+      $scope.reward = '';
+      $scope.location = '';
+
+    }
 });

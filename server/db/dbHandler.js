@@ -1,4 +1,5 @@
 var mysql = require('mysql');
+var Promise = require('bluebird');
 
 var connection = mysql.createConnection({
   user: 'root',
@@ -17,13 +18,17 @@ connection.connect(function(error) {
 
 exports.queries = {
   populateTable: function() {
-    connection.query(
-      'SELECT * FROM lostItem',
-      function (error, data) {
-        if (error) {throw error};
-        return data;
-      }
-    )
+    return new Promise(function(reject, resolve) { 
+      connection.query(
+        'SELECT * FROM lostItem',
+        function (error, data) {
+          if (error) {reject(error)};
+          resolve(data);
+        }
+      )
+    }).then(function(data) {
+      return data;
+    })
   },
 
   getData: function(searchTerm) {
@@ -38,7 +43,7 @@ exports.queries = {
 
   newItem: function(itemObj) {
     connection.query(
-      'INSERT INTO lostItem (keyword, description, reward) VALUES (' + itemObj.keyword + ',' + itemObj.description + ',' + itemObj.reward + ')',
+      'INSERT INTO lostItem (keyword, description, reward, location) VALUES (' + "'" + itemObj.name + "'" + ',' + "'" + itemObj.description + "'" + ',' + itemObj.reward + ',' + "'" +itemObj.location + "'" + ')',
       function(error) {
         if (error) { throw error; }
       }
