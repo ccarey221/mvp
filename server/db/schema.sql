@@ -1,4 +1,4 @@
-DROP DATABASE lost;
+-- DROP DATABASE lost;
 CREATE DATABASE lost;
 
 USE lost;
@@ -19,5 +19,6 @@ CREATE TABLE lostItem (
   description VARCHAR(250),
   reward INTEGER,
   location VARCHAR(100),
+  contact VARCHAR(100),
   PRIMARY KEY(id)
 );

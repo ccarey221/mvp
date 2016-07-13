@@ -43,7 +43,7 @@ exports.queries = {
 
   newItem: function(itemObj) {
     connection.query(
-      'INSERT INTO lostItem (keyword, description, reward, location) VALUES (' + "'" + itemObj.name + "'" + ',' + "'" + itemObj.description + "'" + ',' + itemObj.reward + ',' + "'" +itemObj.location + "'" + ')',
+      'INSERT INTO lostItem (keyword, description, reward, location, contact) VALUES (' + "'" + itemObj.name + "'" + ',' + "'" + itemObj.description + "'" + ',' + itemObj.reward + ',' + "'" +itemObj.location + "'" + itemObj.reward + ',' + "'" +itemObj.contact + "'" + ')',
       function(error) {
         if (error) { throw error; }
       }
